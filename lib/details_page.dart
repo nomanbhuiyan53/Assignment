@@ -10,6 +10,16 @@ class DetailsPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          leading: IconButton(
+            icon: const Icon(
+              Icons.arrow_back,
+              color: Colors.white, // Change to the color you desire
+            ),
+            onPressed: () {
+              Navigator.pop(context);
+            },
+          // Other app bar properties
+        ),
           backgroundColor: Colors.green,
           title: Text(
             data,
@@ -18,6 +28,10 @@ class DetailsPage extends StatelessWidget {
           actions: [
             PopupMenuButton(
               itemBuilder: (context) => [],
+              icon: const Icon(
+                Icons.more_vert,
+                color: Colors.white,
+              ),
             ),
           ],
         ),

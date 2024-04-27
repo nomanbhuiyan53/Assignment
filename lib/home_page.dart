@@ -7,7 +7,7 @@ class HomePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: Colors.green,
-        leading: Icon(Icons.arrow_back_ios),
+        leading: Icon(Icons.arrow_back_ios,color: Colors.white,),
         title: Text(
           'Photo Gallery',
           style: TextStyle(color: Colors.white),
@@ -15,6 +15,10 @@ class HomePage extends StatelessWidget {
         actions: [
           PopupMenuButton(
             itemBuilder: (context) => [],
+            icon: const Icon(
+              Icons.more_vert,
+              color: Colors.white,
+            ),
           ),
         ],
       ),
