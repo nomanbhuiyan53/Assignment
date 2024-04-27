@@ -102,7 +102,7 @@ class DetailsPage extends StatelessWidget {
                                         onTap: () {},
                                         child: Container(
                                           decoration: BoxDecoration(
-                                            borderRadius: BorderRadius.circular(10),
+                                            borderRadius: BorderRadius.circular(20),
                                             image: const DecorationImage(
                                               image:
                                               AssetImage('assets/image/image-3.jpg'),
@@ -189,7 +189,7 @@ class DetailsPage extends StatelessWidget {
                             offset: Offset(0, 4), // changes position of shadow
                           ),
                         ],
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(20),
                         image: DecorationImage(
                           image: AssetImage(img),
                           fit: BoxFit.cover,
