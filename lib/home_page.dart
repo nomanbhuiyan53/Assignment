@@ -8,9 +8,14 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.green,
         leading: Icon(Icons.arrow_back_ios),
-        title: Text('Photo Gallery',style: TextStyle(color: Colors.white),),
+        title: Text(
+          'Photo Gallery',
+          style: TextStyle(color: Colors.white),
+        ),
         actions: [
-          Icon(Icons.menu),
+          PopupMenuButton(
+            itemBuilder: (context) => [],
+          ),
         ],
       ),
       body: OrientationBuilder(
@@ -25,14 +30,14 @@ class HomePage extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    sendData(context, 'Mood','assets/image/image-1.jpg');
+                    sendData(context, 'Mood', 'assets/image/image-1.jpg');
                   },
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-1.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-1.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -62,8 +67,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-2.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-2.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -93,8 +98,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-3.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-3.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -124,8 +129,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-4.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-4.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -155,8 +160,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-5.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-5.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -186,8 +191,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-6.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-6.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -217,8 +222,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-7.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-7.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -248,8 +253,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-8.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-8.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -283,14 +288,14 @@ class HomePage extends StatelessWidget {
               children: [
                 InkWell(
                   onTap: () {
-                    sendData(context, 'Mood','assets/image/image-1.jpg');
+                    sendData(context, 'Mood', 'assets/image/image-1.jpg');
                   },
                   child: Container(
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-1.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-1.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -320,8 +325,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-2.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-2.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -351,8 +356,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-3.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-3.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -382,8 +387,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-4.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-4.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -413,8 +418,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-5.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-5.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -444,8 +449,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-6.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-6.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -475,8 +480,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-7.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-7.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -506,8 +511,8 @@ class HomePage extends StatelessWidget {
                     decoration: BoxDecoration(
                       borderRadius: BorderRadius.circular(10),
                       image: const DecorationImage(
-                        image: AssetImage(
-                            'assets/image/image-8.jpg'), // Path to your image asset
+                        image: AssetImage('assets/image/image-8.jpg'),
+                        // Path to your image asset
                         fit: BoxFit
                             .cover, // Adjust the image to cover the entire area
                       ),
@@ -536,14 +541,16 @@ class HomePage extends StatelessWidget {
       ),
     );
   }
-  void sendData(BuildContext context, String data,var img) {
+
+  void sendData(BuildContext context, String data, var img) {
     Navigator.push(
       context,
       MaterialPageRoute(
-        builder: (context) => DetailsPage(data: data,img: img,),
+        builder: (context) => DetailsPage(
+          data: data,
+          img: img,
+        ),
       ),
     );
   }
 }
-
-

@@ -16,7 +16,9 @@ class DetailsPage extends StatelessWidget {
             style: TextStyle(color: Colors.white),
           ),
           actions: [
-            Icon(Icons.menu),
+            PopupMenuButton(
+              itemBuilder: (context) => [],
+            ),
           ],
         ),
         body: OrientationBuilder(
