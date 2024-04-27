@@ -12,8 +12,8 @@ class DetailsPage extends StatelessWidget {
         appBar: AppBar(
           leading: IconButton(
             icon: const Icon(
-              Icons.arrow_back,
-              color: Colors.white, // Change to the color you desire
+              Icons.arrow_back_ios,
+              color: Colors.white,
             ),
             onPressed: () {
               Navigator.pop(context);
